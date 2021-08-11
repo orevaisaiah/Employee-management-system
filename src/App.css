@@ -1,0 +1,17 @@
+/* font-family: 'Lato', sans-serif; */
+
+
+.search-field {
+  width: 336px;
+  height: 56px;
+  border-radius: 5px;
+}
+
+.search-field::placeholder {
+  padding: 13px 140px 15px 26px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 27.2px;
+  font-weight: 400;
+ 
+}
