@@ -1,14 +1,14 @@
 import './App.css';
 import Button from './components/Button';
 import SearchField from './components/SearchField';
+import CurrentDate from './components/CurrentDate';
 
 function App() {
   return (
     <div className="App">
       <Button className="btn" text={"Send Mail"} />
-      <Button text={"Sign In"} color={'Blue'} />
-      <Button text={"Sign Out"} color={'azure'} />
-      <SearchField  className="search-f"/>
+      <SearchField  className="search-field"/>
+      <CurrentDate />
     </div>
   );
 }

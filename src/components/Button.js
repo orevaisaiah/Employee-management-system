@@ -9,9 +9,9 @@ const Button = ({ text, color, width, height, borderRadius }) => {
     )
 };
 Button.defaultProps = {
-    color: "white",
-    height: "55px",
-    width: "203px",
+    color: '#EFF1FB',
+    height: "54px",
+    width: "177px",
     borderRadius: "10px"
 };
 Button.prototype = {
