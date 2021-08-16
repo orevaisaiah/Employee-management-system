@@ -13,7 +13,7 @@ const Header = () => {
                         text={"Login"}
                         color={"white"}
                         width={"110px"}
-                        height={"60px"}
+                        height={"50px"}
                         font={"16px"}
                         weight={700}
                         btcolor={"#FB8B24"}
@@ -28,7 +28,7 @@ const Header = () => {
                         borderRadius={"0px"}
                         color={"#FB8B24"}
                         width={"110px"}
-                        height={"60px"}
+                        height={"50px"}
                         font={"16px"}
                         weight={700}
                         btcolor={"#FFFFFF"}

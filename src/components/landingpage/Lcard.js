@@ -16,7 +16,7 @@ const Lcard = () => {
                         color={"#FB8B24"}
                         borderRadius={"0px"}
                         width={"170px"}
-                        height={"64px"}
+                        height={"50px"}
                         font={"18px"}
                         weight={700}
                         btcolor={"#FFFFFF"}
