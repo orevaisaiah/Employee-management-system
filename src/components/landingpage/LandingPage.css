@@ -1,3 +1,31 @@
+<<<<<<< HEAD
+=======
+.landing-page {
+    background-color: #fdfafa;
+    width: 100%;
+    padding-top: 10px;
+}
+.search-field {
+    width: 336px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: #d6dbf5;
+}
+
+.search-field::placeholder {
+    padding: 13px 140px 15px 26px;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 27.2px;
+    font-weight: 400;
+}
+.current-date {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
+>>>>>>> f512bacb320fe731d7bfc892ef478b3f37d3099d
 .header-container {
     width: 84%;
     display: flex;
@@ -147,3 +175,26 @@
     display: flex;
     align-items: flex-end;
 }
+<<<<<<< HEAD
+=======
+.form-select {
+    width: 69%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.form-input {
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid gray
+    
+}
+.form-input::placeholder {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000000;
+}
+>>>>>>> f512bacb320fe731d7bfc892ef478b3f37d3099d
