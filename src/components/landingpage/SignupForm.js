@@ -1,13 +1,14 @@
 import React from "react";
+import FileUpload from "./images/file-upload.png";
 
 const SignupForm = () => {
   return (
-    <div style={{ width: "85%", margin: "auto" }}>
+    <div style={{ width: "70%", margin: "auto" }}>
       <div style={{ marginTop: "110px" }}>
         <h2
           style={{
             fontFamily: '"Lato", sans-serif',
-            fontSize: "2em",
+            fontSize: "32px",
             fontWeight: "700",
             lineHeight: "auto",
             color: "#000000",
@@ -19,9 +20,9 @@ const SignupForm = () => {
       <div style={{ marginBottom: "30px" }}>
         <p
           style={{
-            width: "70%",
+            width: "85%",
             fontFamily: '"Lato", sans-serif',
-            fontSize: "1em",
+            fontSize: "16px",
             fontWeight: "400",
             lineHeight: "auto",
             color: "#000000",
@@ -51,46 +52,72 @@ const SignupForm = () => {
               <option value="company">Lorem</option>
             </select>
           </div>
-          <div style={{ width: "100%", marginBottom: "1.25em" }}>
+          <div style={{ width: "100%", marginBottom: "20px" }}>
             <input
               className="form-input"
-              style={{ marginRight: "3.75em" }}
+              style={{ marginRight: "60px" }}
               type="text"
               placeholder="Company Name"
               required
             />
-            <label htmlFor="logo-image">Upload Company Logo</label>
-            <input type="file" id="logo-image" required />
+            <label htmlFor="logo-image">
+              Upload Company Logo{" "}
+              <span style={{ position: "relative", top: "20px" }}>
+                <img src={FileUpload} alt="upload icon" />
+              </span>
+            </label>
+            <input
+              type="file"
+              id="logo-image"
+              required
+              style={{
+                display: "none",
+                visibility: "none",
+                cursor: "pointer",
+                marginBottom: "30px",
+              }}
+            />
           </div>
-          <div style={{width: "100%", }}>
+          <div>
             <input
               className="form-input"
-              style={{ marginRight: "3.75em" }}
+              style={{ marginRight: "60px", marginBottom: "7px" }}
               type="text"
               placeholder="First Name"
               required
             />
             <input
               className="form-input"
+              style={{ marginBottom: "7px" }}
               type="text"
               placeholder="Last Name"
               required
             />
           </div>
-          <div style={{width: "100%", }}>
+          <div>
             <input
               className="form-input"
-              style={{ marginRight: "3.75em" }}
+              style={{ marginRight: "60px" }}
               type="email"
               placeholder="Email"
               required
             />
-            <label htmlFor="profile-image">Upload Profile Picture</label>
-            <input type="file" id="profile-image" required />
-          </div>
-          <div style={{width: "100%", }}>
+            <label htmlFor="profile-image">
+              Upload Profile Picture{" "}
+              <span style={{ position: "relative", top: "20px" }}>
+                <img src={FileUpload} alt="upload icon" />
+              </span>
+            </label>
             <input
-            style={{ marginRight: "3.75em" }}
+              type="file"
+              id="profile-image"
+              style={{ display: "none", visibility: "none", cursor: "pointer" }}
+              required
+            />
+          </div>
+          <div style={{ width: "100%" }}>
+            <input
+              style={{ marginRight: "60px" }}
               className="form-input"
               type="password"
               placeholder="Password"
@@ -103,7 +130,7 @@ const SignupForm = () => {
               required
             />
           </div>
-          <div style={{width: "100%", }}>
+          <div style={{ width: "100%", margin: "30px 0px" }}>
             <input type="checkbox" name="" id="terms" required />
             <label htmlFor="terms">
               I agree to all{" "}
@@ -116,10 +143,24 @@ const SignupForm = () => {
               </span>
             </label>
           </div>
-          <input style={{marginTop: "30px"}} type="submit" value="Create Account" />
+          <input
+            style={{
+              margin: "30px 0",
+              width: "160px",
+              height: "50px",
+              backgroundColor: "#3D50C7",
+              color: "#F8F8F8",
+              fontFamily: '"Lato", sans-serif',
+              fontSize: "16px",
+              fontWeight: "400",
+              border: "none"
+            }}
+            type="submit"
+            value="Create Account"
+          />
         </form>
       </div>
-      <div style={{width: "100%", }}>
+      <div style={{ width: "100%" }}>
         <p>
           Already have an Account? <a href="http://#">Login</a>
         </p>

@@ -9,7 +9,8 @@ import './components/landingpage/LandingPage.css';
 // import Lcard5 from "./components/landingpage/Lcard5";
 // import Footer from "./components/landingpage/Footer"
 
-import Signup from './components/landingpage/Signup'
+import Signup from './components/landingpage/Signup';
+import Login from './components/landingpage/Login';
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                 <Footer />
             </div> */}
             <Signup />
+            <Login />
         </div>
     );
 }
