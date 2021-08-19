@@ -4,7 +4,7 @@ import SignImage from './images/signup.png'
 const SignupImage = () => {
     return (
         <>
-            <img style={{width: "100%", height: "100%"}} src={SignImage} alt="signup" />
+            <img style={{width: "100%", height: "100%x"}} src={SignImage} alt="signup" />
         </>
     )
 }
