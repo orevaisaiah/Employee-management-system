@@ -4,7 +4,7 @@ import Home from './images/home.png'
 const Icon2 = () => {
     return (
         <div>
-            <img src={Home} alt="home icon" />
+            <img src={Home} alt="home icon" style={{maxWidth: "100%"}} />
         </div>
     )
 }

@@ -5,13 +5,13 @@ const Lcard5 = () => {
         <div className="lcard5">
             <h2
                 style={{
-                    fontSize: "30px",
+                    fontSize: "4vw",
                     fontWeight: "700",
                     fontFamily: "'Lato', sans-serif",
                     lineHeight: "auto",
                     textAlign: "center",
                     color: "#FFFFFF",
-                    width: "350px",
+                    maxWidth: "350px",
                     margin: "0px auto 15px auto",
                     paddingTop: "40px",
                 }}
@@ -20,13 +20,13 @@ const Lcard5 = () => {
             </h2>
             <p
                 style={{
-                    fontSize: "14px",
+                    fontSize: "1.8vw",
                     fontWeight: "400",
                     fontFamily: "'Lato', sans-serif",
                     lineHeight: "auto",
                     textAlign: "center",
                     color: "#FFFFFFB2",
-                    width: "570px",
+                    maxWidth: "570px",
                     margin: "10px auto 0px auto",
                 }}
             >

@@ -13,7 +13,7 @@ const Lcard = () => {
                 <div style={{display: "flex", justifyContent: "center", marginBottom: "35px"}}>
                     <Button
                         text={"Watch Demo"}
-                        color={"#FB8B24"}
+                        color={"#3D50C7"}
                         borderRadius={"0px"}
                         width={"170px"}
                         height={"50px"}

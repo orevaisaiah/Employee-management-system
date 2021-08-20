@@ -16,7 +16,7 @@ const Header = () => {
                         height={"50px"}
                         font={"16px"}
                         weight={700}
-                        btcolor={"#FB8B24"}
+                        btcolor={"#3D50C7"}
                         family={"'Lato', sans-serif"}
                         btheight={"24px"}
                         border={"none"}
@@ -26,7 +26,7 @@ const Header = () => {
                     <Button
                         text={"Sign Up"}
                         borderRadius={"0px"}
-                        color={"#FB8B24"}
+                        color={"#3D50C7"}
                         width={"110px"}
                         height={"50px"}
                         font={"16px"}

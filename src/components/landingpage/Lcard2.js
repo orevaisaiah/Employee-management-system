@@ -15,17 +15,16 @@ const Lcard2 = () => {
             >
                 <div
                     style={{
-                        width: "33%",
+                        width: "100%",
                         marginRight: "auto",
                         marginLeft: "auto",
                     }}
                 >
                     <h2
                         style={{
-                            fontSize: "35px",
+                            fontSize: "5vw",
                             fontWeight: "700",
                             fontFamily: "'Lato', sans-serif",
-                            lineHeight: "55px",
                             textAlign: "center",
                         }}
                     >

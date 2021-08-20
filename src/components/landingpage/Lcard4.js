@@ -19,7 +19,7 @@ const Lcard4 = () => {
                     Employee Side Of Things
                 </h2>
             </div>
-            <div style={{ width: "70%", height: "70px", margin: "auto" }}>
+            <div style={{ width: "70%", height: "auto", margin: "auto" }}>
                 <p
                     style={{
                         width: "85%",
@@ -42,7 +42,7 @@ const Lcard4 = () => {
             </div>
             <div
                 style={{
-                    width: "fitContent",
+                    width: "100%",
                     display: "flex",
                     justifyContent: "center",
                     marginTop: "20px",
