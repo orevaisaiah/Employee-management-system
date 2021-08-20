@@ -149,7 +149,7 @@
 }
 .lcard5 {
     max-width: 100%;
-    height: 230px;
+    height: fit-content;
     background-color: #122a59;
 }
 #email-field {
@@ -157,6 +157,7 @@
     height: 40px;
     border-radius: 10px;
     background-color: #f8f8f8fa;
+    margin-bottom: 35px;
 }
 #email-field::placeholder {
     font-family: "Lato", sans-serif;
@@ -172,21 +173,23 @@
     align-items: flex-end;
 }
 .form-select {
-    width: 88%;
-    height: 50px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    width: 100%;
+    height: 34px;
+    border-radius: 5px;
+    margin: 20px 0 20px 0;
+    border: 1px solid gray;
 }
 .form-input {
-    width: 40%;
-    height: 50px;
-    border-radius: 10px;
+    width: 43%;
+    height: 30px;
+    border-radius: 5px;
     margin-bottom: 30px;
     border: 1px solid gray;
 }
 .form-input::placeholder {
     font-family: "Lato", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #000000;
 }

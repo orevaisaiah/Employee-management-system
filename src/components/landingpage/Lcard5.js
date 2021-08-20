@@ -20,7 +20,7 @@ const Lcard5 = () => {
             </h2>
             <p
                 style={{
-                    fontSize: "1.8vw",
+                    fontSize: "1.5vw",
                     fontWeight: "400",
                     fontFamily: "'Lato', sans-serif",
                     lineHeight: "auto",
