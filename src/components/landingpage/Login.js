@@ -4,9 +4,9 @@ import LoginForm from "./LoginForm"
 
 const Login = () => {
     return (
-        <div style={{width: "100%", display: "flex", }}>
-            <div><img src={LoginIm} alt="login" /></div>
-            <div style={{width: "100%" }}>
+        <div className="container-fluid row" style={{display: "flex", maxWidth: "100%", padding: "0px"}}>
+            <div className="col-md-5"style={{padding: "0" }} ><img src={LoginIm} alt="login" style={{heigght: "100%" }} className="img-fluid" /></div>
+            <div style={{padding: "0px"}} className="col-md-7">
                 <LoginForm />
             </div>
         </div>

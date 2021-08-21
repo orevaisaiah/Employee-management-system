@@ -4,7 +4,7 @@ import FileUpload from "./images/file-upload.png";
 const SignupForm = () => {
     return (
         <div style={{ width: "100%" }}>
-            <div style={{ width: "75%", margin: "50px auto 0 auto" }} >
+            <div style={{ width: "75%", margin: "50px auto 0 auto" }}>
                 <form action="">
                     <div>
                         <h2
@@ -52,35 +52,38 @@ const SignupForm = () => {
                             <option value="company">Lorem</option>
                         </select>
                     </div>
-                    <div style={{ marginBottom: "25px" }} >
+                    <div style={{ marginBottom: "25px" }}>
                         <input
                             className="form-input"
                             type="text"
                             placeholder="Company Name"
                             required
-                            style={{margin: "0px 83px 0 0"}}
+                            style={{ margin: "0px 92px 0 0" }}
                         />
                         <label htmlFor="logo-image">
                             Upload Logo{" "}
-                            <span
-                          
-                            >
+                            <span>
                                 <img src={FileUpload} alt="upload icon" />
                             </span>
                         </label>
-                        <input type="file" id="logo-image" required style={{
+                        <input
+                            type="file"
+                            id="logo-image"
+                            required
+                            style={{
                                 display: "none",
                                 visibility: "none",
                                 cursor: "pointer",
-                            }} />
+                            }}
+                        />
                     </div>
-                    <div style={{height: "50px", margin: "0px" }}>
+                    <div style={{ height: "50px", margin: "0px" }}>
                         <input
                             className="form-input"
                             type="text"
                             placeholder="First Name"
                             required
-                            style={{margin: "0px 48px 0 0"}}
+                            style={{ margin: "0px 55px 0 0" }}
                         />
                         <input
                             className="form-input"
@@ -89,18 +92,17 @@ const SignupForm = () => {
                             required
                         />
                     </div>
-                    <div style={{height: "50px", margin: "0px" }} >
+                    <div style={{ height: "50px", margin: "0px" }}>
                         <input
                             className="form-input"
                             type="email"
                             placeholder="Email"
-                            required style={{margin: "0px 22px 0 0"}}
+                            required
+                            style={{ margin: "0px 31px 0 0" }}
                         />
                         <label htmlFor="profile-image">
                             Upload Profile Picture{" "}
-                            <span
-                           
-                            >
+                            <span>
                                 <img src={FileUpload} alt="upload icon" />
                             </span>
                         </label>
@@ -115,14 +117,13 @@ const SignupForm = () => {
                             required
                         />
                     </div>
-                    <div style={{height: "43px", margin: "0px" }}>
+                    <div style={{ height: "43px", margin: "0px" }}>
                         <input
                             className="form-input"
                             type="password"
                             placeholder="Password"
                             required
-                            style={{margin: "0px 48px 0 0"}}
-
+                            style={{ margin: "0px 55px 0 0" }}
                         />
                         <input
                             className="form-input"
@@ -131,16 +132,30 @@ const SignupForm = () => {
                             required
                         />
                     </div>
-                    <div style={{height: "43px", margin: "0px" }} >
+                    <div style={{ height: "43px", margin: "0px" }}>
                         <input type="checkbox" name="" id="terms" required />
                         <label htmlFor="terms">
-                            I agree to all{" "}
+                             I agree to all{" "}
                             <span>
-                                <a href="http://#">Terms </a>
+                                <a
+                                    href="http://#"
+                                    style={{
+                                        textDecoration: "none",
+                                    }}
+                                >
+                                    Terms{" "}
+                                </a>
                             </span>
                             and{" "}
                             <span>
-                                <a href="http://#">Privacy Policy</a>
+                                <a
+                                    href="http://#"
+                                    style={{
+                                        textDecoration: "none",
+                                    }}
+                                >
+                                    Privacy Policy
+                                </a>
                             </span>
                         </label>
                     </div>
@@ -155,17 +170,25 @@ const SignupForm = () => {
                             fontWeight: "400",
                             border: "none",
                             borderRadius: "5px",
-                            marginBottom: "30px"
+                            marginBottom: "30px",
                         }}
                         type="submit"
                         value="Create Account"
                     />
-               </form>
-            <div>
-                <p>
-                    Already have an Account? <a href="http://#">Login</a>
-                </p>
-            </div>
+                </form>
+                <div>
+                    <p>
+                        Already have an Account?{" "}
+                        <a
+                            href="http://#"
+                            style={{
+                                textDecoration: "none",
+                            }}
+                        >
+                            Login
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
     );

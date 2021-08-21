@@ -4,7 +4,7 @@ import SignupForm from "./SignupForm";
 
 const Signup = () => {
   return (
-    <div className="container-fluid row" style={{display: "flex", maxWidth: "100%", padding: "0px"}}>
+    <div className=" row" style={{display: "flex", maxWidth: "100%", padding: "0px"}}>
       <div className="col-md-5"style={{padding: "0" }} >
         <img src={SignupImage} alt="signup" style={{heigght: "100%" }} className="img-fluid" />
       </div>

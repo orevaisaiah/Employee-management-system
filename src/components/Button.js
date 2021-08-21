@@ -11,7 +11,6 @@ const Button = ({
     weight,
     family,
     btcolor,
-    btheight,
     border
 }) => {
     return (
@@ -26,7 +25,6 @@ const Button = ({
                     fontWeight: weight,
                     fontFamily: family,
                     color: btcolor,
-                    lineHeight: btheight,
                     border: border
                 }}
             >
