@@ -7,13 +7,13 @@ const Lcard4 = () => {
             <div>
                 <h2
                     style={{
-                        fontSize: "30px",
+                        fontSize: "2.083vw",
                         fontWeight: "700",
                         fontFamily: "'Lato', sans-serif",
-                        lineHeight: "auto",
+                        lineHeight: "3.125vh",
                         textAlign: "center",
                         color: "#060709",
-                        margin: " 70px auto 10px auto",
+                        margin: " 102px auto 16px auto",
                     }}
                 >
                     Employee Side Of Things
@@ -22,14 +22,15 @@ const Lcard4 = () => {
             <div style={{ width: "70%", height: "auto", margin: "auto" }}>
                 <p
                     style={{
-                        width: "85%",
-                        fontSize: "12px",
+                        width: "41vw",
+                        height: "3.75vw",
+                        fontSize: "0.833vwpx",
                         fontWeight: "400",
                         fontFamily: "'Lato', sans-serif",
-                        lineHeight: "auto",
+                        lineHeight: "1.9vh",
                         textAlign: "center",
                         color: "#313335B2",
-                        margin: "0px auto 0px auto",
+                        margin: "0px auto 24px auto",
                     }}
                 >
                     Ease of receiving task from the Admins. Team members can
@@ -45,7 +46,6 @@ const Lcard4 = () => {
                     width: "100%",
                     display: "flex",
                     justifyContent: "center",
-                    marginTop: "20px",
                 }}
             >
                 <Phone />

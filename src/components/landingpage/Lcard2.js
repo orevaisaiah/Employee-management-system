@@ -22,10 +22,12 @@ const Lcard2 = () => {
                 >
                     <h2
                         style={{
-                            fontSize: "5vw",
+                            fontSize: "2.06vw",
+                            lineHeight: "3.124vh",
                             fontWeight: "700",
                             fontFamily: "'Lato', sans-serif",
                             textAlign: "center",
+                            marginTop: "120px"
                         }}
                     >
                         Features of EMS
@@ -39,7 +41,7 @@ const Lcard2 = () => {
                         <div>
                             <h3 className="h3-heading">Easy Task Generation</h3>
                         </div>
-                        <div className="p-container">
+                        <div >
                             <p className="lcard2-p">
                                 Task management software helps to overcome task
                                 prioritazation issues so that important task can
@@ -54,7 +56,7 @@ const Lcard2 = () => {
                         <div>
                             <h3 className="h3-heading">Manage Attendance</h3>
                         </div>
-                        <div className="p-container">
+                        <div >
                             <p className="lcard2-p">
                                 Employers can monitor their work team with the
                                 aid of the web based software to rate their
@@ -69,7 +71,7 @@ const Lcard2 = () => {
                         <div>
                             <h3 className="h3-heading">Easy Payment Process</h3>
                         </div>
-                        <div className="p-container">
+                        <div >
                             <p className="lcard2-p">
                                 Workers can get details of payment of their
                                 salaries through the database software for each

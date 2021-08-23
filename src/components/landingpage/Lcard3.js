@@ -5,10 +5,12 @@ const Lcard3 = () => {
     <div className="lcard3">
       <div
         style={{
-          width: "30%",
-          margin: "auto",
+          minWidth: "30%",
+          minHeight: "100%",
           display: "flex",
           alignItems: "center",
+          justifyContent: "center",
+          marginBottom: "54px"
         }}
       >
         <div>

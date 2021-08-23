@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginIm from "./images/login.png"
+import LoginIm from "./images/login.svg"
 import LoginForm from "./LoginForm"
 
 const Login = () => {

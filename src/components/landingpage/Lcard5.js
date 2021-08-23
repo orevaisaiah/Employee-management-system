@@ -5,14 +5,14 @@ const Lcard5 = () => {
         <div className="lcard5">
             <h2
                 style={{
-                    fontSize: "4vw",
+                    fontSize: "2.083vw",
                     fontWeight: "700",
                     fontFamily: "'Lato', sans-serif",
-                    lineHeight: "auto",
+                    lineHeight: "3.125vh",
                     textAlign: "center",
                     color: "#FFFFFF",
-                    maxWidth: "350px",
-                    margin: "0px auto 15px auto",
+                    width: "20vw",
+                    margin: "52px auto 16px auto",
                     paddingTop: "40px",
                 }}
             >
@@ -20,14 +20,15 @@ const Lcard5 = () => {
             </h2>
             <p
                 style={{
-                    fontSize: "1.5vw",
+                    fontSize: "0.833vw",
                     fontWeight: "400",
                     fontFamily: "'Lato', sans-serif",
-                    lineHeight: "auto",
+                    lineHeight: "2vh",
                     textAlign: "center",
                     color: "#FFFFFFB2",
-                    maxWidth: "570px",
-                    margin: "10px auto 0px auto",
+                    width: "30vw",
+                    height: "6.5vh",
+                    margin: "0px auto 24px auto",
                 }}
             >
                 All required to enjoy every benefit from this organization is to
@@ -35,7 +36,7 @@ const Lcard5 = () => {
                 that concerns the company to increase productivityt.
             </p>
             <form
-                style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}
+                style={{ display: "flex", justifyContent: "center"}}
                 action=""
             >
                 <input

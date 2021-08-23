@@ -4,13 +4,13 @@ const Footer = () => {
     return (
         <footer id="lfooter">
             <p style={{
-                    fontSize: "14px",
+                    fontSize: "0.833vw",
                     fontWeight: "400",
                     fontFamily: "'Lato', sans-serif",
-                    lineHeight: "24px",
+                    lineHeight: "1.25vh",
                     textAlign: "center",
                     color: "#31333599",
-                    margin: "0px auto 20px auto",
+                    
                 }}>Developed By EMS Team. © Copyright 2021</p>
         </footer>
     )

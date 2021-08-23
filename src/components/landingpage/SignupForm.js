@@ -78,15 +78,17 @@ const SignupForm = () => {
                 <Form action="">
                     <div style={{ width: "100%" }}>
                         <div
-                            style={{ width: "75%", margin: "50px auto 0 auto" }}
+                            style={{ width: "85%", margin: "50px auto 0 0px" }}
                         >
                             <div>
                                 <h2
                                     style={{
                                         fontFamily: '"Lato", sans-serif',
-                                        fontSize: "30px",
+                                        fontSize: "1.67vw",
                                         fontWeight: "700",
                                         color: "#000000",
+                                        lineHeight: "2vh",
+                                        margin: "126px 0 16px 0"
                                     }}
                                 >
                                     Register
@@ -95,10 +97,11 @@ const SignupForm = () => {
                             <div>
                                 <p
                                     style={{
+                                        width: "30.5vw",
                                         fontFamily: '"Lato", sans-serif',
-                                        fontSize: "14px",
+                                        fontSize: "0.b33vw",
                                         fontWeight: "400",
-                                        lineHeight: "auto",
+                                        lineHeight: "2vh",
                                         color: "#000000",
                                         marginTop: "10px",
                                     }}

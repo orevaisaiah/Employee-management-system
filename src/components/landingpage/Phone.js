@@ -4,7 +4,7 @@ import Cellphone from './images/phone.png';
 const Phone = () => {
     return (
         <>
-          <img src={Cellphone} alt="phone" style={{maxWidth: "100%"}} />  
+          <img className="img-fluid" src={Cellphone} alt="phone" style={{maxWidth: "100%"}} />  
         </>
     )
 }
