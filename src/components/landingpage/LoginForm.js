@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
     return (
@@ -49,8 +50,8 @@ const LoginForm = () => {
                             required
                             placeholder="Password"
                             style={{
-                              margin: "0 0 0px 0px"
-                          }}
+                                margin: "0 0 0px 0px",
+                            }}
                         />
                     </div>
                     <div>
@@ -62,12 +63,10 @@ const LoginForm = () => {
                                 fontSize: "16px",
                                 fontWeight: "700",
                                 textDecoration: "none",
-                                margin: "0 0 0px 116px"
                             }}
                         >
                             Forgot Password?
                         </a>
-
                     </div>
                     <input
                         style={{
@@ -88,9 +87,19 @@ const LoginForm = () => {
                 </form>
                 <div style={{ width: "100%" }}>
                     <p className="login-link">
-                        Don't have an Account? <span> <a href="http://#" style={{
-                                textDecoration: "none"
-                            }}> Register</a></span>
+                        Don't have an Account?{" "}
+                        <span>
+                            {" "}
+                            <Link
+                                to="/signup"
+                                style={{
+                                    textDecoration: "none",
+                                }}
+                            >
+                                {" "}
+                                Register
+                            </Link>
+                        </span>
                     </p>
                 </div>
             </div>

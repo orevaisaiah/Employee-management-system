@@ -181,10 +181,9 @@
     border: 1px solid gray;
 }
 .form-input {
-    width: 43%;
+    max-width: 95%;
     height: 30px;
     border-radius: 5px;
-    margin-bottom: 30px;
     border: 1px solid gray;
 }
 .form-input::placeholder {
@@ -193,6 +192,10 @@
     font-weight: 400;
     color: #000000;
 }
+.fieldcontainer {
+    max-width: 170px;
+}
+
 .login-input {
     width: 70%;
     height: 30px;
@@ -211,6 +214,5 @@
     font-size: 18px;
     font-weight: 400;
     color: #08072E;
-    margin-top: 10px;
-    
+    margin-top: 10px;   
 }
