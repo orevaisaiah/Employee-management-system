@@ -4,31 +4,32 @@ import { Link } from 'react-router-dom';
 const LoginForm = () => {
     return (
         <div style={{ maxWidth: "100%" }}>
-            <div style={{ maxWidth: "100%", margin: "0px auto 0 70px" }}>
+            <div style={{ width: "100%", margin: "340px 0 0 0" }}>
                 <div style={{ marginTop: "150px" }}>
                     <h2
                         style={{
                             fontFamily: '"Lato", sans-serif',
-                            fontSize: "30px",
+                            fontSize: "1.67vw",
                             fontWeight: "700",
-                            lineHeight: "auto",
-                            color: "#08072E",
-                            marginBottom: "0px",
-                        }}
+                            color: "#000000",
+                            lineHeight: "4vh",
+                            margin: "0 0 16px 0",
+                          }}
                     >
                         Login
                     </h2>
                 </div>
                 <div style={{ marginBottom: "30px" }}>
                     <p
-                        style={{
-                            width: "85%",
+                         style={{
+                            width: "43.5vw",
                             fontFamily: '"Lato", sans-serif',
-                            fontSize: "14px",
+                            fontSize: "0.b33vw",
                             fontWeight: "400",
-                            lineHeight: "auto",
-                            color: "#08072E",
-                        }}
+                            lineHeight: "2vh",
+                            color: "#000000",
+                            marginBottom: "59px",
+                          }}
                     >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Enim eget justo, neque gravida nec at massa auctor.
@@ -78,7 +79,7 @@ const LoginForm = () => {
                             fontSize: "16px",
                             fontWeight: "400",
                             border: "none",
-                            borderRadius: "10px",
+                            borderRadius: "5px",
                             marginTop: "16px",
                         }}
                         type="submit"
