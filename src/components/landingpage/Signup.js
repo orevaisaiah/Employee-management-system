@@ -1,4 +1,5 @@
 import React from "react";
+import './LandingPage.css';
 import SignupImage from "./images/signup.svg";
 import SignupForm from "./SignupForm";
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import './LandingPage.css';
 import { useHistory } from 'react-router-dom'
 import Header from './Header';
 import Lcard from './Lcard';

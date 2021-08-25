@@ -1,4 +1,5 @@
 import React from 'react';
+import './LandingPage.css';
 import LoginIm from "./images/login.svg"
 import LoginForm from "./LoginForm"
 

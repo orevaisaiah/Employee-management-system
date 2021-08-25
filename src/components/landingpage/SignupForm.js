@@ -1,26 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
+import axios from "axios";
 import FileUpload from "./images/file-upload.png";
 
 const SignupForm = () => {
-  const companyCategory = [
-    "Lorem 1",
-    "Lorem 2",
-    "Lorem 3",
-    "Lorem 4",
-    "Lorem 5",
-    "Lorem 6",
-    "Lorem 7",
+  const [loading, setLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+
+  const companyType = [
+    "Agriculture",
+    "Aerospace",
+    "Education",
+    "Construction",
+    "Telecommunication",
+    "Transport",
+    "Health care",
+    "Hospitality",
+    "Pharmaceutical",
+    "Food",
+    "Entertainment",
+    "News Media",
+    "Energy",
+    "Manufacturing",
+    "Mining",
   ];
 
   const validationSchema = Yup.object().shape({
-    companyCategory: Yup.string()
+    companyType: Yup.string()
       .required(
         "Please Select your category of company from the listed options"
       )
-      .oneOf(companyCategory),
+      .oneOf(companyType),
     companyname: Yup.string().required("Plase enter the name of your company"),
     logoimage: Yup.mixed().required("Please upload your company logo"),
     firstname: Yup.string().required("Please enter your Firstname"),
@@ -40,7 +52,7 @@ const SignupForm = () => {
       .required(),
   });
   const initialValues = {
-      companyCategory: "",
+      companyType: "",
       companyname: "",
       logoimage: "",
       firstname: "",
@@ -52,11 +64,27 @@ const SignupForm = () => {
       termscheck: false,
     },
     onSubmit = (values) => {
+      setLoading(true);
+      setIsError(false);
+      axios({
+        method: 'post',
+        url:"hhttp://localhost:5000/values",
+        data: values})
+        .then((resp) => {
+          console.log(resp)
+          setLoading(false);
+        })
+        .catch((err) => {
+          console.log(err)
+          setLoading(false);
+          setIsError(true);
+        });
+      console.log(values)
       alert(JSON.stringify(values, null, 2));
     };
-  const companyCategoryOptions = companyCategory.map((category, index) => (
-    <option value={category} key={index}>
-      {category}
+  const companyTypeOptions = companyType.map((type, index) => (
+    <option value={type} key={index}>
+      {type}
     </option>
   ));
   const renderError = (message) => <p style={{ color: "red" }}>{message}</p>;
@@ -106,19 +134,17 @@ const SignupForm = () => {
               <div>
                 <Field
                   className={`form-select form-control ${
-                    touched.companyCategory &&
-                    errors.companyCategory &&
-                    "is-invalid"
+                    touched.companyType && errors.companyType && "is-invalid"
                   }`}
-                  name="companyCategory"
+                  name="companyType"
                   as="select"
                 >
                   <option className="form-option" value={""}>
-                    Select Category of Your Company
+                    Select Company Type
                   </option>
-                  {companyCategoryOptions}
+                  {companyTypeOptions}
                 </Field>
-                <ErrorMessage name="companyCategory" render={renderError} />
+                <ErrorMessage name="companyType" render={renderError} />
               </div>
               <div
                 style={{
@@ -126,7 +152,7 @@ const SignupForm = () => {
                   justifyContent: "space-between",
                 }}
               >
-                <div style={{ marginBottom: "64px"}}>
+                <div style={{ marginBottom: "64px" }}>
                   <div className="fieldcontainer">
                     <Field
                       className={`form-input form-control ${
@@ -143,7 +169,7 @@ const SignupForm = () => {
                     <ErrorMessage name="companyname" render={renderError} />
                   </div>
                 </div>
-                <div >
+                <div>
                   <div className="fieldcontainer">
                     <label htmlFor="logo-image">
                       Upload Logo{" "}
@@ -174,7 +200,7 @@ const SignupForm = () => {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  marginBottom: "33px"
+                  marginBottom: "33px",
                 }}
               >
                 <div>
@@ -213,7 +239,7 @@ const SignupForm = () => {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  marginBottom: "33px"
+                  marginBottom: "33px",
                 }}
               >
                 <div>
@@ -265,7 +291,7 @@ const SignupForm = () => {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  marginBottom: "33px"
+                  marginBottom: "33px",
                 }}
               >
                 <div>
