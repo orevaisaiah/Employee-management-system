@@ -3,32 +3,32 @@ import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
     return (
-        <div style={{ maxWidth: "100%" }}>
-            <div style={{ width: "100%", margin: "340px 0 0 0" }}>
-                <div style={{ marginTop: "150px" }}>
+        <div style={{width: "75%", margin: "0 auto 0 auto"}}>   
+                <div style={{ }}>
                     <h2
                         style={{
                             fontFamily: '"Lato", sans-serif',
-                            fontSize: "1.67vw",
+                            fontSize: "32px",
                             fontWeight: "700",
                             color: "#000000",
-                            lineHeight: "4vh",
-                            margin: "0 0 16px 0",
+                            lineHeight: "5vh",
+                            margin: "220px 0 0 0"
                           }}
                     >
                         Login
                     </h2>
                 </div>
-                <div style={{ marginBottom: "30px" }}>
+                <div style={{ }}>
                     <p
                          style={{
                             width: "43.5vw",
                             fontFamily: '"Lato", sans-serif',
-                            fontSize: "0.b33vw",
+                            fontSize: "16px",
                             fontWeight: "400",
-                            lineHeight: "2vh",
+                            lineHeight: "3vh",
                             color: "#000000",
-                            marginBottom: "59px",
+                            margin: "16px 0 33px 0"
+                            
                           }}
                     >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -36,22 +36,25 @@ const LoginForm = () => {
                     </p>
                 </div>
                 <form action="">
-                    <div style={{ width: "80%" }}>
+                    <div style={{ width: "100%" }}>
                         <input
                             className="login-input"
                             type="email"
                             required
                             placeholder="Email"
+                            style={{
+                                marginBottom: "20px" 
+                             }}
                         />
                     </div>
-                    <div style={{ width: "80%" }}>
+                    <div style={{ width: "100%" }}>
                         <input
                             className="login-input"
                             type="password"
                             required
                             placeholder="Password"
                             style={{
-                                margin: "0 0 0px 0px",
+                               marginBottom: "14px" 
                             }}
                         />
                     </div>
@@ -71,8 +74,8 @@ const LoginForm = () => {
                     </div>
                     <input
                         style={{
-                            width: "150px",
-                            height: "45px",
+                            width: "10.5vw",
+                            height: "6.3vh",
                             backgroundColor: "#3D50C7",
                             color: "#F8F8F8",
                             fontFamily: '"Lato", sans-serif',
@@ -80,7 +83,7 @@ const LoginForm = () => {
                             fontWeight: "400",
                             border: "none",
                             borderRadius: "5px",
-                            marginTop: "16px",
+                            margin: "30px 0 20px 0",
                         }}
                         type="submit"
                         value="Login"
@@ -103,7 +106,6 @@ const LoginForm = () => {
                         </span>
                     </p>
                 </div>
-            </div>
         </div>
     );
 };

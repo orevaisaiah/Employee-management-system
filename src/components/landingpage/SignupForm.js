@@ -1,14 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
-import axios from "axios";
-import FileUpload from "./images/file-upload.png";
 
 const SignupForm = () => {
-  const [loading, setLoading] = useState(false);
-  const [isError, setIsError] = useState(false);
-
   const companyType = [
     "Agriculture",
     "Aerospace",
@@ -63,23 +58,15 @@ const SignupForm = () => {
       repassword: "",
       termscheck: false,
     },
-    onSubmit = (values) => {
-      setLoading(true);
-      setIsError(false);
-      axios({
-        method: 'post',
-        url:"hhttp://localhost:5000/values",
-        data: values})
-        .then((resp) => {
-          console.log(resp)
-          setLoading(false);
-        })
-        .catch((err) => {
-          console.log(err)
-          setLoading(false);
-          setIsError(true);
-        });
-      console.log(values)
+    onSubmit = async (values) => {
+      const resp = await fetch("http://localhost:5000/values", {
+        method: "POST",
+        headers: {
+          "Content-type": "multipart/form-data",
+        },
+        body: JSON.stringify(values),
+      });
+      console.log(resp);
       alert(JSON.stringify(values, null, 2));
     };
   const companyTypeOptions = companyType.map((type, index) => (
@@ -98,14 +85,14 @@ const SignupForm = () => {
       }}
     >
       {({ touched, errors }) => (
-        <Form action="">
+        <Form>
           <div style={{ width: "100%", margin: "126px 0 0 0" }}>
             <div style={{ width: "85%", margin: "0px auto 0px 40px" }}>
               <div>
                 <h2
                   style={{
                     fontFamily: '"Lato", sans-serif',
-                    fontSize: "1.67vw",
+                    fontSize: "32px",
                     fontWeight: "700",
                     color: "#000000",
                     lineHeight: "4vh",
@@ -120,9 +107,9 @@ const SignupForm = () => {
                   style={{
                     width: "43.5vw",
                     fontFamily: '"Lato", sans-serif',
-                    fontSize: "0.b33vw",
+                    fontSize: "16px",
                     fontWeight: "400",
-                    lineHeight: "2vh",
+                    lineHeight: "4vh",
                     color: "#000000",
                     marginBottom: "45px",
                   }}
@@ -171,24 +158,13 @@ const SignupForm = () => {
                 </div>
                 <div>
                   <div className="fieldcontainer">
-                    <label htmlFor="logo-image">
-                      Upload Logo{" "}
-                      <span>
-                        <img src={FileUpload} alt="upload icon" />
-                      </span>
-                    </label>
                     <Field
-                      className={` form-control${
+                      className={`form-control ${
                         touched.logoimage && errors.logoimage && "is-invalid"
                       }`}
                       type="file"
                       id="logo-image"
                       name="logoimage"
-                      style={{
-                        display: "none",
-                        visibility: "none",
-                        cursor: "pointer",
-                      }}
                     />
                   </div>
                   <div className="fieldcontainer">
@@ -212,7 +188,7 @@ const SignupForm = () => {
                       type="text"
                       name="firstname"
                       placeholder="First Name"
-                      style={{}}
+                      
                     />
                   </div>
                   <div className="fieldcontainer">
@@ -260,12 +236,6 @@ const SignupForm = () => {
                 </div>
                 <div>
                   <div className="fieldcontainer">
-                    <label htmlFor="profile-image">
-                      Upload Picture{" "}
-                      <span>
-                        <img src={FileUpload} alt="upload icon" />
-                      </span>
-                    </label>
                     <Field
                       className={` form-control ${
                         touched.profileimage &&
@@ -275,11 +245,6 @@ const SignupForm = () => {
                       type="file"
                       id="profile-image"
                       name="profileimage"
-                      style={{
-                        display: "none",
-                        visibility: "none",
-                        cursor: "pointer",
-                      }}
                     />
                   </div>
                   <div className="fieldcontainer">

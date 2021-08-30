@@ -127,7 +127,7 @@
   font-size: 0.833vw;
   font-weight: 400;
   text-align: center;
-  line-height: 2vh;
+  line-height: 3vh;
   color: #313335b2;
   margin-bottom: 35px;
 }
@@ -155,7 +155,7 @@
   margin-bottom: 70px;
 }
 .lcard5 {
-  max-width: 100%;
+  width: 100%;
   height: fit-content;
   background-color: #122a59;
 }
@@ -205,10 +205,9 @@
 }
 
 .login-input {
-  width: 20vw;
+  width: 23vw;
   height: 5.3vh;
   border-radius: 5px;
-  margin-bottom: 29px;
   border: 1px solid gray;
 }
 .login-input::placeholder {

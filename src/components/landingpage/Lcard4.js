@@ -4,7 +4,7 @@ import Phone from "./Phone";
 const Lcard4 = () => {
     return (
         <div className="lcard4">
-            <div>
+            <div style={{width: "100%", height: "auto"}}>
                 <h2
                     style={{
                         fontSize: "2.083vw",
@@ -19,15 +19,15 @@ const Lcard4 = () => {
                     Employee Side Of Things
                 </h2>
             </div>
-            <div style={{ width: "70%", height: "auto", margin: "auto" }}>
+            <div style={{ width: "70%", height: "fitContent", margin: "auto" }}>
                 <p
                     style={{
                         width: "41vw",
-                        height: "3.75vw",
-                        fontSize: "0.833vwpx",
+                        height: "auto",
+                        fontSize: "0.833vw",
                         fontWeight: "400",
                         fontFamily: "'Lato', sans-serif",
-                        lineHeight: "1.9vh",
+                        lineHeight: "4.9vh",
                         textAlign: "center",
                         color: "#313335B2",
                         margin: "0px auto 24px auto",
@@ -46,6 +46,7 @@ const Lcard4 = () => {
                     width: "100%",
                     display: "flex",
                     justifyContent: "center",
+                    alignItems: "center"
                 }}
             >
                 <Phone />
