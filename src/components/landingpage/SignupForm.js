@@ -62,7 +62,7 @@ const SignupForm = () => {
       const resp = await fetch("http://localhost:5000/values", {
         method: "POST",
         headers: {
-          "Content-type": "multipart/form-data",
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(values),
       });

@@ -69,7 +69,30 @@
       "id": 6
     },
     {
+      "companyType": "Aerospace",
+      "companyname": "isaiah",
+      "logoimage": "C:\\fakepath\\566758279800.png",
+      "firstname": "isaiah",
+      "lastname": "isaiah",
+      "email": "isaiah@gmail.com",
+      "profileimage": "C:\\fakepath\\566758279800.png",
+      "password": "323232",
+      "repassword": "323232",
+      "termscheck": true,
       "id": 7
+    },
+    {
+      "companyType": "Agriculture",
+      "companyname": "isaiah",
+      "logoimage": "C:\\fakepath\\566758279800.png",
+      "firstname": "isaiah",
+      "lastname": "isaiah",
+      "email": "isaiah@gmail.com",
+      "profileimage": "C:\\fakepath\\566758279800.png",
+      "password": "121212",
+      "repassword": "121212",
+      "termscheck": true,
+      "id": 8
     }
   ]
 }
