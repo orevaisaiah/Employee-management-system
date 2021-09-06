@@ -3,26 +3,7 @@
   width: 100%;
   padding-top: 10px;
 }
-.search-field {
-  width: 336px;
-  height: 56px;
-  border-radius: 5px;
-  background-color: #d6dbf5;
-}
 
-.search-field::placeholder {
-  padding: 13px 140px 15px 26px;
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  line-height: 27.2px;
-  font-weight: 400;
-}
-.current-date {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27.2px;
-}
 .header-container {
   width: 84%;
   display: flex;
@@ -34,9 +15,9 @@
 }
 .header-p {
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 1.69rem;
   text-transform: uppercase;
 }
 .lcard-container {
@@ -46,7 +27,7 @@
 .lcard-container > h1 {
   width: fit-content;
   font-family: "Lato", sans-serif;
-  font-size: 3.33vw;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 150%;
   color: #060709;
@@ -56,7 +37,7 @@
 .lcard-container > p {
   width: 65%;
   font-family: "Lato", sans-serif;
-  font-size: 1.25vw;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 150%;
   text-align: center;
@@ -73,11 +54,19 @@
   flex-direction: column;
   align-items: center;
 }
+#heading21 {
+  font-size: 2.5rem;
+  line-height: 3.124vh;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-top: 120px;
+}
 .h3-heading {
   font-family: "Lato", sans-serif;
-  font-size: 1.67vw;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 2.5vh;
+  line-height: 4.7vh;
   text-align: center;
   color: #060709;
   margin: 33px auto 16px auto;
@@ -87,9 +76,9 @@
   height: 6.75vh;
   margin: auto;
   font-family: "Lato", sans-serif;
-  font-size: 0.833vw;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 2vh;
+  line-height: 3vh;
   text-align: center;
   color: #313335b2;
   margin-bottom: 106px;
@@ -103,7 +92,7 @@
 }
 .main-heading {
   font-family: "Lato", sans-serif;
-  font-size: 2.08vw;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 3.125vh;
   text-align: center;
@@ -112,7 +101,7 @@
 }
 .sub-heading {
   font-family: "Lato", sans-serif;
-  font-size: 1.667vw;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 2.5vh;
   text-align: center;
@@ -121,10 +110,10 @@
   margin-bottom: 16px;
 }
 .parag {
-  width: 16.375vw;
+  width: 40%;
   max-height: fit-content;
   font-family: "Lato", sans-serif;
-  font-size: 0.833vw;
+  font-size: 1rem;
   font-weight: 400;
   text-align: center;
   line-height: 3vh;
@@ -143,7 +132,7 @@
 }
 .numb {
   font-family: "Lato", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 42px;
   text-align: center;
@@ -154,21 +143,41 @@
   height: auto;
   margin-bottom: 70px;
 }
+#heading23 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  line-height: 3.125vh;
+  text-align: center;
+  color: #060709;
+  margin: 102px auto 16px auto;
+}
 .lcard5 {
   width: 100%;
   height: fit-content;
   background-color: #122a59;
 }
+#heading24 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  line-height: 3.125vh;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  margin: 52px auto 16px auto;
+  padding-top: 40px;
+}
 #email-field {
   width: 32vw;
-  height: 3.33vh;
+  height: 4.33vh;
   border-radius: 5px;
   background-color: #f8f8f8fa;
   margin-bottom: 52px;
 }
 #email-field::placeholder {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 27px;
   font-weight: 400;
   padding-left: 15px;
@@ -223,6 +232,45 @@
   color: #08072e;
   margin-top: 10px;
 }
-.aligntext {
-  text-align: left;
+
+@media screen and (max-width: 800px) {
+  .lcard2-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #heading1 {
+    font-size: 2rem;
+  }
+  #heading21 {
+    font-size: 2rem;
+  }
+  #heading22 {
+    font-size: 2rem;
+  }
+  #heading23 {
+    font-size: 2rem;
+  }
+  #heading24 {
+    font-size: 2rem;
+  }
+  #pparag {
+    font-size: 2rem;
+  }
+  .h3-heading {
+    font-size: 1.5rem;
+  }
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .form-select {
+    width: 100%;
+  }
+  .fieldcontainer {
+    width: 40vw;
+  }
+  .form-input {
+    width: 40vw;
+  }
 }

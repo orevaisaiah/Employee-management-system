@@ -14,7 +14,6 @@ function App() {
     <div className="App">
           <Switch>
           <Route exact path="/" component={LandingPage} />
-      {/* <div style={{ width: "100%" }}> */}
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/login" component={Login} />
             <Route path="/employee">

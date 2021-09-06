@@ -8,12 +8,12 @@ function Tables() {
 
   useEffect(() => {
     axios
-      .get("https://empmgtapp.herokuapp.com/api/employee")
+      .get("https://empmgtapp.herokuapp.com/api/admin/")
       .then(({ data }) => {
         setEmployees(data.data);
         
       });
-      axios.post("https://empmgtapp.herokuapp.com/api/employee/signup")
+      
   }, []);
 
   return (
@@ -34,7 +34,7 @@ function Tables() {
           <tbody>
             <tr>
               <td>
-                <img src={em.photo} alt="logo" />
+                <img src={em.photo} alt="logo" style={{width:'50px', height:'50px', borderRadius:'50%', backgroundColor:'rgb(245, 33, 33)'}} />
                 {em.firstName} {em.lastName}
               </td>
               <td>{em._id}</td>

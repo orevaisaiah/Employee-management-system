@@ -11,6 +11,7 @@ function Payroll() {
     <>
     <Navbar />
     <Header />
+    div
     <section style={{ textAlign: "justify" }}>
       <h6 style={{ textAlign: "right", marginTop: "6.8rem", marginRight:'6rem' }}>
         <a
@@ -43,19 +44,19 @@ function Payroll() {
         <div className="payroll-card">
           <div className="pay--card">
             <h1>
-              <strike>N</strike>14.2M
+              <strike>N</strike>0
             </h1>
             <span>Available Balance</span>
           </div>
           <div className="pay--card">
             <h1>
-              <strike>N</strike>10.2M
+              <strike>N</strike>0
             </h1>
             <span>Total Gross</span>
           </div>
           <div className="pay--card">
             <h1>
-              <strike>N</strike>1.2M
+              <strike>N</strike>0
             </h1>
             <span>Overtime</span>
           </div>

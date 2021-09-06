@@ -19,6 +19,7 @@
     padding: 2%;
   }
   .home-bar {
+    text-align: center;
     width: 20vw;
     height: 100vh;
     position: fixed;
@@ -61,9 +62,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: absolute;
     gap: 10%;
-    margin-left: 30rem;
+    margin-left: 22%;
     margin-right: 18rem;
     margin-top: 20px;
     
@@ -76,24 +77,15 @@
     margin-left: 60px;
     /* margin-right: 30px; */
   }
-  .emp-con > input {
+/* input {
     margin-top: 250px;
     width: 432px;
     height: 50px;
     border-radius: 10px;
     background-color: #EFF1FB;
     border: 2px;
-  }
-  .blessed-state > button {
-    width: 177px !important;
-    height: 54px !important;
-    top: 245px !important;
-    margin-left: 262px !important;
-    border: 2px solid #3D50C7;
-    border-radius: 10px !important;
-    background-color: transparent !important;
-    font-weight: 700;
-    }
+  } */
+
   button:hover{
     box-shadow: 4px 8px 16px #3D50C7;
   }
@@ -122,18 +114,18 @@
     color: white;
     background-color: #3d50c7;
   }
-  .notify > img {
+  /* .notify > img {
     background-color: rgb(245, 33, 33);
     width: 50px;
     height: 50px;
     border-radius: 50%;
-  }
+  } */
   .blessed-state {
     display: flex;
     justify-content: space-around;
     gap: 2%;
-    margin-top: 50px;
-    margin-left: 3rem;
+    margin-top: 6%;
+    margin-left: 11%;
     /* width: 90vw; */
   }
   .blessed-state2 {
@@ -142,7 +134,7 @@
     margin-right: 3.1em;
   }
   .modal-btn{
-    text-align: center !important;
+    /* text-align: center !important; */
     background-color: #3D50C7 !important;
     border: none !important;
     font-weight: 600 !important;
@@ -154,14 +146,17 @@
     background-color: #ffffff;
     font-weight: 600;
     color: #3D50C7;
-    
   }
   .modal-input > input{
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: transparent;
-    margin-bottom: 20px;
+    margin: 10px 20px;
+    /* margin-top: 250px; */
+    width: 432px;
+    height: 50px;
+    border-radius: 10px;
   }
   .modal-input > label{
     display: flex;
@@ -177,12 +172,14 @@
     border-radius: 10px;
     background-color: transparent;
   }
-  .create-task{
+  /* .create-task{
+      width: 432px;
     height: 116px;
     border: 2px solid #3D50C7;
     box-sizing: border-box;
-    border-radius: 10px;background-color: transparent;
-  }
+    border-radius: 10px;
+    background-color: transparent;
+  } */
   
   /* Payroll Section */
   
@@ -199,7 +196,7 @@
     height: 128px;
     border-radius: 10px;
     display: grid;
-    align-content: center;
+    text-align: center;
     box-shadow: 0px 4px 8px rgba(72, 72, 72, 0.15);
   }
   .pay--card:hover{
@@ -217,27 +214,27 @@
   
   
   .main-home{
-    display: flex !important;
+    display: flex;
     justify-content: space-between;
-    margin-left: 2%;
   }
   .home-main{
+      width: 922px;
     height: 256px;
     background: rgba(246, 233, 173, 0.7);
     align-items: center;
     border-radius: 10px;
     margin-left: 22%;
-    margin-top: 2%;
+    margin-top: 6%;
   }
   .home-card{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 2%;
+    /* margin-left: 2%; */
     color: #3D50C7;
     margin-top: 12%;
   }
-  .home--card{
+  /* .home--card{
     background-color: #FBFDFF;
     width: 218px;
     height: 128px;
@@ -245,7 +242,7 @@
     display: grid;
     align-content: center;
     box-shadow: 0px 4px 8px rgba(72, 72, 72, 0.15);
-  }
+  } */
   .chart-style{
     display: grid;
     justify-content: center;
@@ -282,13 +279,13 @@
   .main-chart{
     display: flex;
     justify-content: space-evenly;
-    margin-left: 5%;
-    margin-top: 4%;
+    /* margin-left: 5%; */
+    margin-top: 2%;
     gap: 3%;
   }
   .home-btn > button{
-    background-color: #3D50C7 !important;
-     color: #ffffff !important;
+    background-color: #3D50C7;
+     color: #ffffff;
   }
   
   /* Right bar */
@@ -297,12 +294,17 @@
     align-items: center;
     width: 20%;
     height: 100%;
-    margin-left: 100rem !important;
+    margin-left: 100rem;
     position: fixed;
     background-color: #EFF1FB;
     z-index: -1;
   }
   .right-btn > button{
     color: #3D50C7;
+    width: 177px;
+    height: 54px;
+    border: 2px solid#3D50C7;
+    border-radius: 10px;
+    background-color: transparent;
   }
   

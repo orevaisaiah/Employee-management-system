@@ -93,7 +93,7 @@ const SignupForm = () => {
       {({ touched, errors }) => (
         <Form>
           <div style={{ width: "100%", margin: "126px 0 0 0" }}>
-            <div style={{ width: "85%", margin: "0px auto 0px 40px" }}>
+            <div style={{ width: "85%", margin: "0px auto 0px auto" }}>
               <div>
                 <h2
                   style={{
@@ -111,7 +111,7 @@ const SignupForm = () => {
               <div>
                 <p
                   style={{
-                    width: "43.5vw",
+                    width: "90%",
                     fontFamily: '"Lato", sans-serif',
                     fontSize: "16px",
                     fontWeight: "400",
@@ -120,8 +120,7 @@ const SignupForm = () => {
                     marginBottom: "45px",
                   }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim
-                  eget justo, neque gravida nec at massa auctor.
+                  To begin, provide your organisation and personal details.
                 </p>
               </div>
               <div>
@@ -164,6 +163,7 @@ const SignupForm = () => {
                 </div>
                 <div>
                   <div className="fieldcontainer">
+                    
                     <Field
                       className={`form-control ${
                         touched.logoimage && errors.logoimage && "is-invalid"
@@ -173,6 +173,7 @@ const SignupForm = () => {
                       name="logoimage"
                       accept="image/*"
                     />
+                    <label style={{color: "#000000", fontWeight: "400"}} htmlFor='logoimage'>Upload Company Logo</label>
                   </div>
                   <div className="fieldcontainer">
                     <ErrorMessage name="logoimage" render={renderError} />
@@ -253,6 +254,7 @@ const SignupForm = () => {
                       name="profileimage"
                       accept="image/*"
                     />
+                    <label style={{color: "#000000", fontWeight: "400"}} htmlFor='logoimage'>Upload Profile Image</label>
                   </div>
                   <div className="fieldcontainer">
                     <ErrorMessage name="profileimage" render={renderError} />

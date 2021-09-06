@@ -18,7 +18,7 @@ function Header() {
             <i class="far fa-bell fa-2x"></i>
           </div>
           <div>
-            <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo" />
+            <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo" style={{width:'50px', height:'50px', borderRadius:'50%', backgroundColor:'rgb(245, 33, 33)'}}/>
           </div>
         </div>
       </section>

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../Components/Dash.css';
 import { Modal, Button } from "react-bootstrap";
 import Header from '../Components/Header';
 import Navbar from "../Components/Navbar";
 import Rightbar from "../Components/Rightbar";
+import axios from 'axios'
 
 function Home() {
 
@@ -14,12 +15,23 @@ function Home() {
 
   const handleSubmit ={
     
-  }
+  };
+  const [employees, setEmployees] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://empmgtapp.herokuapp.com/api/admin/")
+      .then(({ data }) => {
+        setEmployees(data.data);
+        
+      });
+      
+  }, []);
 
   return (
-    <div className='main-home'>
-      <Navbar />
+    <div className='main-home'style={{textAlign:'center'}}>
       <Header />
+      <Navbar />
      <Rightbar />   
     <div className="home-main">
       
@@ -31,6 +43,7 @@ function Home() {
         style={{
           display: "flex",
           justifyContent: "space-between",
+          gap:'30%',
           marginLeft: "3%",
           marginRight: "3%",
         }}
@@ -43,7 +56,8 @@ function Home() {
         </div>
 
         <div className="home-btn">
-          <button onClick={handleShow}>Add Employee</button>
+
+          <button onClick={handleShow} style={{width:'177px', height:'54px', border:'2px solid #3D50C7', borderRadius:'10px', fontWeight:'700'}}>Add Employee</button>
 
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
@@ -73,7 +87,7 @@ function Home() {
               <Button
                 onClick={handleSubmit}
                 className="modal-btn"
-                style={{ marginTop: "100px" }}
+                style={{width:'177px', height:'54px', border:'2px solid #3D50C7', borderRadius:'10px', fontWeight:'700', margin:'100px 0 50px 150px'}}
               >
                 Add
               </Button>
@@ -81,7 +95,7 @@ function Home() {
           </Modal>
         </div>
       </div>
-
+      
       <div className="home-card">
         <div className="pay--card">
           <h1>0</h1>
@@ -96,11 +110,11 @@ function Home() {
           <span style={{ color: "#EB9D05" }}>On Leave</span>
         </div>
         <div className="pay--card">
-          <h1 style={{ color: "#A66DC2" }}>0</h1>
+          <h1 style={{ color: "#A66DC2" }}>{employees.length}</h1>
           <span style={{ color: "#A66DC2" }}>Total Employees</span>
         </div>
       </div>
-
+      
       <div className="main-chart">
         <div className="chart-style">
           <h4 style={{ display: "grid", justifyContent: "flex-start" }}>

@@ -20,15 +20,7 @@ const Lcard2 = () => {
                         marginLeft: "auto",
                     }}
                 >
-                    <h2
-                        style={{
-                            fontSize: "2.06vw",
-                            lineHeight: "3.124vh",
-                            fontWeight: "700",
-                            fontFamily: "'Lato', sans-serif",
-                            textAlign: "center",
-                            marginTop: "120px"
-                        }}
+                    <h2 id="heading21"
                     >
                         Features of EMS
                     </h2>
@@ -72,7 +64,7 @@ const Lcard2 = () => {
                             <h3 className="h3-heading">Easy Payment Process</h3>
                         </div>
                         <div >
-                            <p className="lcard2-p">
+                            <p className="lcard2-p ">
                                 Workers can get details of payment of their
                                 salaries through the database software for each
                                 work schedule payment.

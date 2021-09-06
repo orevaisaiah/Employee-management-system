@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
@@ -7,14 +7,6 @@ const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [user, setUser] = useState("");
-
-  useEffect(() => {
-    const loggedInUser = localStorage.getItem("user");
-    if (loggedInUser) {
-      const foundUser = JSON.parse(loggedInUser);
-      setUser(foundUser);
-    }
-  }, []);
 
   let history = useHistory();
 
@@ -46,11 +38,12 @@ const LoginForm = () => {
 
       console.log(user);
       console.log("Login");
-
+      alert("You Are Logged In");
       history.push("/Dashboard");
+      
     } catch (error) {
       console.error(error);
-      alert("Email doesnt exist");
+      
     }
     setEmail("");
     setPassword("");

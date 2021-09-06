@@ -11,11 +11,15 @@ function Rightbar() {
     return (
         <div className='right-bar'>
 
-            <div className='right-btn'>
-                <button>Send Email</button>
+            <div>
+                <div className='right-btn' style={{margin:'50% 25% 50% 30%'}}>
+                  <button style ={{marginBottom:'20px'}}>Send Email</button><br/>
                 <button>Suggestions</button>
-
-                <button onClick={handleTaskShow}>Create Task</button>
+                </div>
+                <div className='right-btn' style={{margin:'50% 25% 50% 30%'}}>
+                  <button onClick={handleTaskShow}>Create Task</button>
+                </div>
+                
                 <Modal show={task} onHide={handleTaskClose}>
           <Modal.Header closeButton>
             <Modal.Title className="vw-100" style={{ fontWeight: 700 }}>
@@ -101,6 +105,9 @@ function Rightbar() {
             </div>
           </Modal.Body>
         </Modal>
+      </div>
+      <div>
+
       </div>
                 
         </div>

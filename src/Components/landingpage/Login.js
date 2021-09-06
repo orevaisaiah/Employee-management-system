@@ -1,6 +1,6 @@
 import React from 'react';
 import './LandingPage.css';
-import LoginIm from "./images/login.svg"
+import LoginIm from "./images/login.png"
 import LoginForm from "./LoginForm"
 
 const Login = () => {

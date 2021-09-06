@@ -1,6 +1,7 @@
+
 import React from "react";
 import './LandingPage.css';
-import SignupImage from "./images/signup.svg";
+import SignupImage from "./images/signup.png";
 import SignupForm from "./SignupForm";
 
 const Signup = () => {

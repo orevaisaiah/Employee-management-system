@@ -3,8 +3,8 @@ import Creditcard from './images/credit.png';
 
 const Icon3 = () => {
     return (
-        <div>
-            <img src={Creditcard} alt="credit card icon" style={{maxWidth: "100%"}} />
+        <div className="container-fluid" >
+            <img src={Creditcard} alt="credit card icon" className="img-fluid" style={{maxWidth: "100%"}} />
         </div>
     )
 }

@@ -4,33 +4,23 @@ import Phone from "./Phone";
 const Lcard4 = () => {
     return (
         <div className="lcard4">
-            <div style={{width: "100%", height: "auto"}}>
-                <h2
-                    style={{
-                        fontSize: "2.083vw",
-                        fontWeight: "700",
-                        fontFamily: "'Lato', sans-serif",
-                        lineHeight: "3.125vh",
-                        textAlign: "center",
-                        color: "#060709",
-                        margin: " 102px auto 16px auto",
-                    }}
-                >
+            <div>
+                <h2 id="heading23">
                     Employee Side Of Things
                 </h2>
             </div>
-            <div style={{ width: "70%", height: "fitContent", margin: "auto" }}>
+            <div className="container-fluid" style={{ width: "100%", height: "100%", margin: "auto" }}>
                 <p
                     style={{
-                        width: "41vw",
-                        height: "auto",
-                        fontSize: "0.833vw",
+                        width: "55%",
+                        height: "60%",
+                        fontSize: "1rem",
                         fontWeight: "400",
                         fontFamily: "'Lato', sans-serif",
-                        lineHeight: "4.9vh",
+                        lineHeight: "3vh",
                         textAlign: "center",
                         color: "#313335B2",
-                        margin: "0px auto 24px auto",
+                        margin: "0px auto 0px auto",
                     }}
                 >
                     Ease of receiving task from the Admins. Team members can
@@ -41,12 +31,11 @@ const Lcard4 = () => {
                     employees.
                 </p>
             </div>
-            <div
+            <div className="container-fluid"
                 style={{
                     width: "100%",
                     display: "flex",
                     justifyContent: "center",
-                    alignItems: "center"
                 }}
             >
                 <Phone />

@@ -15,7 +15,7 @@ const Lcard3 = () => {
       >
         <div>
           <div>
-            <h2 className="main-heading">How It Works</h2>
+            <h2 className="main-heading" id="heading22">How It Works</h2>
           </div>
 
           <div>
@@ -25,7 +25,7 @@ const Lcard3 = () => {
             <div>
               <h3 className="sub-heading">Sign Up</h3>
             </div>
-            <div>
+            <div style={{display: "flex", justifyContent: "center"}}>
               <p className="parag">
                 Admin will create an operational account for each of the
                 employees to enable timely, effective and efficient
@@ -40,7 +40,7 @@ const Lcard3 = () => {
             <div>
               <h3 className="sub-heading">Add Employees</h3>
             </div>
-            <div>
+            <div style={{display: "flex", justifyContent: "center"}}>
               <p className="parag">
                 Recruitment of new employees to each of the companies department
                 could be done by top officers ; Admin, Managers ...
@@ -52,9 +52,9 @@ const Lcard3 = () => {
               <h3 className="numb">3</h3>
             </div>
             <div>
-              <h3 className="sub-heading">Generate Report</h3>
+              <h3 className="sub-heading heading3">Generate Report</h3>
             </div>
-            <div>
+            <div style={{display: "flex", justifyContent: "center"}}>
               <p className="parag">
                 Preparation of report emanating from the organization would made
                 ease; From the admins or employees.

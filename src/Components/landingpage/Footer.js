@@ -4,10 +4,10 @@ const Footer = () => {
     return (
         <footer id="lfooter">
             <p style={{
-                    fontSize: "0.833vw",
+                    fontSize: "1rem",
                     fontWeight: "400",
                     fontFamily: "'Lato', sans-serif",
-                    lineHeight: "1.25vh",
+                    lineHeight: "3.5vh",
                     textAlign: "center",
                     color: "#31333599",
                     

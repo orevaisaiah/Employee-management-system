@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Modal, Button } from "react-bootstrap";
+import axios from 'axios';
 
 
 function Add() {
   const [show, setShow] = useState(false);
   const [task, setTask] = useState(false);
-  // const [add, setAdd] = useState(false);
-  
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -17,12 +16,29 @@ function Add() {
   // const handleAddClose = () => setAdd(false);
   // const handleAddShow = () => setAdd(true);
 
+  
 
+  const addTask = async (task) => {
+    axios
+        .post("https://empmgtapp.herokuapp.com/api/task/createTask/612940ccc9e8cc0016b4aa4f", {
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(task),
+        })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+      alert("Task Created Successfully");
+    };
 
   return (
     <section className="blessed-state">
       <div>
-        <button onClick={handleShow} className="button">
+        <button onClick={handleShow} style={{width:'177px', height:'54px', border:'2px solid #3D50C7', borderRadius:'10px', fontWeight:'700', backgroundColor:'transparent', color:'#3D50C7'}}>
           Add Employee
         </button>
 
@@ -54,14 +70,14 @@ function Add() {
             <Button
               onClick={handleClose}
               className="modal-btn"
-              style={{ marginTop: "100px"}}
+              style={{width:'177px', height:'54px', border:'2px solid #3D50C7', borderRadius:'10px', fontWeight:'700', margin:'100px 0 50px 150px'}}
             >
               Add
             </Button>
           </Modal.Body>
         </Modal>
 
-        <button onClick={handleTaskShow} className="btn--2">
+        <button onClick={handleTaskShow} className="btn--2" style={{width:'177px', height:'54px', border:'2px solid #3D50C7', borderRadius:'10px', fontWeight:'700', backgroundColor:'transparent', color:'#3D50C7'}}>
           Add Task
         </button>
 
@@ -80,7 +96,8 @@ function Add() {
                 Task Title
               </label>
               <br />
-              <input type="text" className="create-task-tittle" />
+ 
+              <input type="text" style={{width:'432px', height:'50px', borderRadius:'10px', border:'2px solid #3D50C7', margin:'10px 20px'}} />
               <br />
               <label
                 for="task description"
@@ -89,7 +106,7 @@ function Add() {
                 Task Description
               </label>
               <br />
-              <input type="text" className="create-task" />
+              <input type="text" style={{width:'432px', height:'116px', borderRadius:'10px', border:'2px solid #3D50C7', margin:'10px 20px'}}/>
               <br />
               <h5 style={{ textAlign: "right", marginTop: "30px" }}>
                 <span><a href="Upload"><i class="fas fa-paperclip"></i></a>
@@ -134,48 +151,21 @@ function Add() {
             </form>
             <div>
               <button
-                onClick={handleTaskClose}
+                onClick={addTask}
                 className="modal-btn"
-                style={{ marginTop: "30px" }}
+                style={{width:'177px', height:'54px', border:'2px solid #3D50C7', borderRadius:'10px', fontWeight:'700', margin:'100px 0 50px 150px'}}
               >
                 Create Task
               </button>
               <button
                 onClick={handleTaskClose}
                 className="modal-btn--2"
-                style={{ marginTop: "30px", marginBottom:'30px'}}
+                style={{width:'177px', height:'54px', border:'2px solid #3D50C7', borderRadius:'10px', fontWeight:'700', margin:'100px 0 50px 150px'}}
               >
                 Cancel
               </button>
             </div>
 
-            {/* <Modal show={add} onHide={handleAddShow}>
-              <Modal.Header closeButton>
-                <Modal.Title style={{ fontWeight: 700 }}>
-                  Add Employee
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <p>Sucessfully Added</p>
-
-                <div>
-                  <p>
-                    An invitation link has been sent to your email with the
-                    following details
-                    <br />
-                    <br />
-                    User ID: GT-35647<br>Password: fd48shf</br>
-                  </p>
-                </div>
-
-                <Button onClick={handleAddClose} className="modal-btn">
-                  Add Another User
-                </Button>
-                <Button onClick={handleAddClose} className="modal-btn">
-                  Done
-                </Button>
-              </Modal.Body>
-            </Modal> */}
           </Modal.Body>
         </Modal>
       </div>

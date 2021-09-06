@@ -3,31 +3,19 @@ import React from "react";
 const Lcard5 = () => {
   return (
     <div className="lcard5">
-      <h2
-        style={{
-          fontSize: "2.083vw",
-          fontWeight: "700",
-          fontFamily: "'Lato', sans-serif",
-          lineHeight: "4.125vh",
-          textAlign: "center",
-          color: "#FFFFFF",
-          width: "25vw",
-          margin: "52px auto 16px auto",
-          paddingTop: "40px",
-        }}
-      >
+      <h2 id="heading24">
         Join Our Mailing List
       </h2>
       <p
         style={{
-          fontSize: "0.833vw",
+          fontSize: "1rem",
           fontWeight: "400",
           fontFamily: "'Lato', sans-serif",
-          lineHeight: "3vh",
+          lineHeight: "3.5vh",
           textAlign: "center",
           color: "#FFFFFFB2",
-          width: "30vw",
-          height: "6.5vh",
+          width: "55%",
+          height: "40%",
           margin: "0px auto 24px auto",
         }}
       >
@@ -35,8 +23,32 @@ const Lcard5 = () => {
         functional elecrtonic mailing system to share information that concerns
         the company to increase productivityt.
       </p>
-      <form style={{ display: "flex", justifyContent: "center" }} action="">
-        <input id="email-field" type="email" placeholder="Enter Email" />
+      <form
+        style={{
+          display: "flex",
+          justifyContent: "center",
+         
+        }}
+        action=""
+      >
+          <input id="email-field" type="email" placeholder="Enter Email" />
+          <button
+            style={{
+              backgroundColor: "#3D50C7",
+              width: "63px",
+              height: "23px",
+              color: "white",
+              fontFamily: "'Lato', sans-serif",
+              fontSize: "1rem",
+              fontWeight: "700",
+              border: "none",
+              boderRadius: "10px",
+              marginLeft: "-67px",
+              marginTop: "3.5px",
+            }}
+          >
+            Send
+          </button>
       </form>
     </div>
   );

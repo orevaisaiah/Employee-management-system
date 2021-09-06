@@ -5,8 +5,8 @@ const Lcard = () => {
     return (
         <div>
             <div className="lcard-container" >
-                <h1>Excellent Way To Best Productivity</h1>
-                <p>
+                <h1 id="heading1">Excellent Way To Best Productivity</h1>
+                <p id="pparag">
                     Powerful, self-served analysis to help you convert,
                     engage and retain more employees
                 </p>
